@@ -1,0 +1,58 @@
+.App {
+  margin-top: 20px;
+}
+.profile {
+  margin: 0 auto;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.description {
+  padding: 30px;
+}
+.avatar {
+  margin: 0 auto;
+  background-color: grey;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.tag {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+.location {
+  text-align: center;
+  color: #ccc;
+}
+.statsList {
+  display: flex;
+  border-radius: 45px 45px 45px 5px;
+}
+.statsListItem {
+  background-color: grey;
+  padding: 10px;
+  border-right: 1px solid black;
+  display: flex;
+  width: calc(100% / 3);
+  flex-direction: column;
+}
+.statsListItem:last-child {
+  border-right: none;
+}
+.label {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.quantity {
+  text-align: center;
+  font-weight: 800;
+}

@@ -1,17 +1,17 @@
-import PropTypes from 'prop-types';
-
-export default function TransactionTableItem ({type ,amount ,currency }) {
-  return <tr>
-    <td>{type}</td>
-  <td>{amount}</td>
-  <td>{currency}</td>
-  </tr>
-
+import PropTypes from "prop-types"
+import s from "./TransactionHistory.module.css"
+export default function TransactionTableItem({ type, amount, currency }) {
+  return (
+    <tr className={s.string}>
+      <td className={s.type}>{type}</td>
+      <td className={s.amount}>{amount}</td>
+      <td className={s.currency}>{currency}</td>
+    </tr>
+  )
 }
 
 TransactionTableItem.propTypes = {
-    type: PropTypes.string,
-    amount: PropTypes.string,
-    currency:PropTypes.string,
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string,
 }
-
