@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-// import TransactionTableItem from './TransactionTableItem '
+import TransactionTableItem from "./TransactionTableItem "
 
 export default function TransactionTable({ items }) {
   return (
