@@ -4,14 +4,14 @@ import s from "./Statistics.module.css"
 export default function Statistics({ stats }) {
   return (
     <ul className={s.statList}>
-      {stats.map((item) => (
-        <li className={s.statListItem} key={item.id}>
-          <StatisticsListItem label={item.label} percentage={item.percentage} />
+      {stats.map(({ label, id, percentage }) => (
+        <li className={s.statListItem} key={id}>
+          <StatisticsListItem label={label} percentage={percentage} />
         </li>
       ))}
     </ul>
   )
 }
 Statistics.propTypes = {
-  key: PropTypes.number,
+  id: PropTypes.number,
 }

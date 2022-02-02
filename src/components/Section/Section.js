@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
-import s from "./Statistics.module.css"
-console.log(s.statistics)
+import s from "./Section.module.css"
 const Section = ({ title, children }) => {
   return (
     <section className={s.section}>

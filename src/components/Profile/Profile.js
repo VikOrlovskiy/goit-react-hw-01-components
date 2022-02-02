@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import s from "./Profile.module.css"
 
 const UserProfile = ({ username, tag, location, avatar, stats }) => {
+  console.log(stats)
   return (
     <div className={s.profile}>
       <div className={s.description}>
@@ -36,5 +37,9 @@ UserProfile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired,
+  stats: PropTypes.shape({
+    likes: PropTypes.number,
+    views: PropTypes.number,
+    followers: PropTypes.number,
+  }).isRequired,
 }

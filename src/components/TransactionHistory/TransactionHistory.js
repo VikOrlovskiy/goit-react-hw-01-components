@@ -11,12 +11,12 @@ export default function TransactionTable({ items }) {
           <th>Currency</th>
         </tr>
       </thead>
-      {items.map((item) => (
-        <tbody key={item.id} className={s.tbody}>
+      {items.map(({ id, type, amount, currency }) => (
+        <tbody key={id} className={s.tbody}>
           <TransactionTableItem
-            type={item.type}
-            amount={item.amount}
-            currency={item.currency}
+            type={type}
+            amount={amount}
+            currency={currency}
           />
         </tbody>
       ))}
@@ -24,5 +24,5 @@ export default function TransactionTable({ items }) {
   )
 }
 TransactionTable.propTypes = {
-  key: PropTypes.string,
+  id: PropTypes.string,
 }

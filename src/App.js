@@ -1,14 +1,16 @@
 import "./App.css"
-import user from "../src/Profile/user.json"
-import Profile from "../src/Profile/Profile"
-import Section from "../src/Statistics/Section"
-import Statistics from "../src/Statistics/Statistics"
-import FriendList from "../src/FriendList/FriendList"
-import TransactionTable from "../src/TransactionHistory/TransactionHistory"
-import transactions from "../src/TransactionHistory/transactions.json"
-import friends from "../src/FriendList/friends.json"
-import data from "../src/Statistics/data.json"
-import s from "./Profile/Profile.module.css"
+import user from "./data/user.json"
+import transactions from "./data/transactions.json"
+import friends from "./data/friends.json"
+import data from "./data/data.json"
+
+import Profile from "./components/Profile"
+import Section from "./components/Section"
+import Statistics from "./components/Statistics"
+import FriendList from "./components/FriendList"
+import TransactionTable from "./components/TransactionHistory"
+
+import s from "./components/Profile/Profile.module.css"
 
 function App() {
   return (

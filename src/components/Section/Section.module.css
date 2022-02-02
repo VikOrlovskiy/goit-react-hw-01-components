@@ -1,0 +1,9 @@
+.section {
+  padding: 20px;
+}
+.title {
+  color: #ccc;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
