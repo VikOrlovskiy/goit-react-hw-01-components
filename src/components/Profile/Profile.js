@@ -2,7 +2,6 @@ import PropTypes from "prop-types"
 import s from "./Profile.module.css"
 
 const UserProfile = ({ username, tag, location, avatar, stats }) => {
-  console.log(stats)
   return (
     <div className={s.profile}>
       <div className={s.description}>
